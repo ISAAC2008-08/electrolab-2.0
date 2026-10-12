@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElectroLab 2.0 - Construcción y Análisis de Circuitos Electrónicos</title>
+    <meta name="description" content="Aplicación profesional para el diseño, esquemática y análisis topológico de circuitos electrónicos." />
+    <meta property="og:title" content="ElectroLab 2.0 - Construcción y Análisis de Circuitos Electrónicos" />
+    <meta property="og:description" content="Aplicación profesional para el diseño, esquemática y análisis topológico de circuitos electrónicos." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app-root">
+      <!-- 1. Barra Superior con Menús y Herramientas -->
+      <div id="app-topbar-container"></div>
+
+      <!-- 2. Área Principal de Trabajo -->
+      <main class="app-workspace">
+        <!-- Panel Izquierdo: Biblioteca de Componentes -->
+        <aside id="panel-library-container" aria-label="Biblioteca de componentes"></aside>
+
+        <!-- Área Central: Lienzo de Diseño de Circuitos con Cuadrícula -->
+        <section class="canvas-wrapper" aria-label="Lienzo de dibujo esquemático">
+          <div id="canvas-container" style="width: 100%; height: 100%;"></div>
+
+          <!-- Panel Inferior Expandible: Fórmulas, Análisis y Resultados -->
+          <div id="panel-bottom-container" aria-label="Panel de análisis y fórmulas"></div>
+        </section>
+
+        <!-- Panel Derecho: Propiedades del Componente Seleccionado -->
+        <aside id="panel-properties-container" aria-label="Propiedades del elemento seleccionado"></aside>
+      </main>
+    </div>
+
+    <!-- Script Principal Nativo JavaScript (ES Module) -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+
